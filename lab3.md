@@ -68,7 +68,9 @@ The observed error alone does not confirm path traversal.
 
 Directory enumeration identified an administrative panel candidate. The assessment notes reference `admin-admin` as a potential default credential pair.
 
-**Evidence:** Screenshots `SS/image-8.png` and `SS/image-9.png`.
+**Evidence:** Screenshots
+![alt text](SS/image-8.png)
+![alt text](SS/image-9.png)
 
 **Verification status:** Inconclusive. The available evidence does not demonstrate a successful login, administrative privileges, or unauthorized access to user data.
 
@@ -78,7 +80,7 @@ Directory enumeration identified an administrative panel candidate. The assessme
 
 The endpoint displayed an error that may indicate an area for further investigation into file path handling.
 
-**Evidence:** Screenshot `SS/image-10.png`.
+**Evidence:** Screenshot ![alt text](SS/image-10.png)
 
 **Verification status:** Inconclusive. No confirmed path traversal, unauthorized file read, or sensitive data exposure has been demonstrated.
 
