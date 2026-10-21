@@ -47,11 +47,17 @@ The following screenshots should be included as supporting evidence:
 
 - **Screenshot 2:** Registration details page showing the email address and password fields.
   <img width="922" height="1095" alt="Screenshot 2026-10-21 232222" src="https://github.com/user-attachments/assets/4235c606-4d4c-49bc-a888-1297b409e279" />
+  
+- **Screenshot 3:** Registration details page showing the phone number.
+  <img width="923" height="1039" alt="Screenshot 2026-10-21 232330" src="https://github.com/user-attachments/assets/f71ac483-3a78-4886-b705-ff13748c618b" />
+  
+- **Screenshot 4:** Wrong OTP entered.
+  <img width="925" height="1001" alt="Screenshot 2026-10-21 232351" src="https://github.com/user-attachments/assets/85d83e9f-9854-4562-aacb-8ef88dcbdf8e" />
 
-- **Screenshot 3:** Modified verification response showing the success indicator changed to `true`.
+- **Screenshot 5:** Modified verification response showing the success indicator changed to `true`.
   <img width="1566" height="795" alt="Screenshot 2026-10-21 232417" src="https://github.com/user-attachments/assets/cd64115f-9833-428f-9192-658bbdcbb73d" />
 
-- **Screenshot 4:** Application state after forwarding the modified response.
+- **Screenshot 6:** Application state after forwarding the modified response.
   <img width="934" height="989" alt="image" src="https://github.com/user-attachments/assets/02b899e3-c537-4e36-8856-fbec9ed8ec17" />
 
 
