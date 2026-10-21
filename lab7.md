@@ -2,7 +2,7 @@
 
 ## Affected URL
 
-[\[Insert the target URL\]](https://verify.pwnedbox.site/)
+[\[[Insert the target URL](https://verify.pwnedbox.site/)\]]
 
 ## Description
 
