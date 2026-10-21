@@ -36,7 +36,7 @@ If the application proceeds to grant access to protected functionality without v
 - Screenshot 2: Response manipulation performed using Burp Suite.
   <img width="1561" height="757" alt="Screenshot 2026-10-21 225903" src="https://github.com/user-attachments/assets/2c6957c0-1644-4d6a-88d8-13bd6f5d043b" />
 - Screenshot 3: Evidence of successful verification or access to protected functionality, if confirmed.
-- <img width="1674" height="449" alt="Screenshot 2026-10-21 225912" src="https://github.com/user-attachments/assets/16bfabe3-d3d9-48e4-8855-1757beef329b" />
+  <img width="1674" height="449" alt="Screenshot 2026-10-21 225912" src="https://github.com/user-attachments/assets/16bfabe3-d3d9-48e4-8855-1757beef329b" />
 
 
 ## Impact
