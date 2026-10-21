@@ -58,16 +58,16 @@ The following screenshots provide evidence of the observed behavior:
   <img width="643" height="796" alt="Screenshot 2026-10-21 230932" src="https://github.com/user-attachments/assets/1a57c23e-41aa-44e1-a969-b476cb8ea215" />
 
 - **Screenshot 2:** OTP verification page displaying the OTP entry interface.
-- <img width="653" height="843" alt="Screenshot 2026-10-21 230957" src="https://github.com/user-attachments/assets/922f5648-71ae-4228-b01a-d7f46aa6a70a" />
+  <img width="653" height="843" alt="Screenshot 2026-10-21 230957" src="https://github.com/user-attachments/assets/922f5648-71ae-4228-b01a-d7f46aa6a70a" />
 
 - **Screenshot 3:** Burp Suite response to an invalid OTP, showing `"verify": false` and the incorrect OTP message.
-- <img width="1574" height="701" alt="Screenshot 2026-10-21 231020" src="https://github.com/user-attachments/assets/7f11255b-aab2-4267-9370-cbf3c965df4f" />
+  <img width="1574" height="701" alt="Screenshot 2026-10-21 231020" src="https://github.com/user-attachments/assets/7f11255b-aab2-4267-9370-cbf3c965df4f" />
 
 - **Screenshot 4:** Burp Suite response after manipulation, showing `"verify": true`.
-- <img width="1533" height="821" alt="Screenshot 2026-10-21 231034" src="https://github.com/user-attachments/assets/385c044c-fab6-40cb-aa0d-6218bebda6e1" />
+  <img width="1533" height="821" alt="Screenshot 2026-10-21 231034" src="https://github.com/user-attachments/assets/385c044c-fab6-40cb-aa0d-6218bebda6e1" />
 
 - **Screenshot 5:** Shopping interface accessible after the response manipulation.
-- <img width="884" height="967" alt="Screenshot 2026-10-21 231106" src="https://github.com/user-attachments/assets/5f61dc46-dcb4-4aee-a36e-9a39aa4046b2" />
+  <img width="884" height="967" alt="Screenshot 2026-10-21 231106" src="https://github.com/user-attachments/assets/5f61dc46-dcb4-4aee-a36e-9a39aa4046b2" />
 
 
 **Observed result:** The application proceeded beyond OTP verification after the client received a manipulated success response. Product browsing and the delivery address selection workflow were accessible.
