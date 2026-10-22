@@ -32,8 +32,8 @@ This exposure creates a critical security risk, as Leostream centrally manages r
 
 ## Impact
 
-1. Unauthorized access to the Leostream Connection Broker administration console[cite: 29].
-2. Exposure of VDI statistics, connected users, license details, and desktop power/assignment statuses[cite: 29].
+1. Unauthorized access to the Leostream Connection Broker administration console.
+2. Exposure of VDI statistics, connected users, license details, and desktop power/assignment statuses.
 3. Potential manipulation or disruption of virtual desktop pools, user permissions, and session routing rules.
 4. Risk of unauthorized deployment or reconfiguration of remote access resources.
 5. Potential exploitation of exposed session metadata and broker internals as a foothold for further attacks against enterprise infrastructure.
