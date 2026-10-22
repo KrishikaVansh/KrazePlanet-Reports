@@ -16,7 +16,7 @@ This exposure creates a severe security risk, as Bonita BPM coordinates enterpri
 
 ## Steps to Reproduce
 
-1. Navigate to the affected URL: `[http://<target-ip>/bonita/apps/appDirectoryBonita/home/](https://13.52.126.192/bonita/apps/appDirectoryBonita/home/?_l=en)`
+1. Navigate to the affected URL: `(https://13.52.126.192/bonita/apps/appDirectoryBonita/home/?_l=en)`
 2. Access the Bonita application login page.
 3. Authenticate using default credentials (`install` / `install`).
 4. Observe that authentication is successful and grants administrative access.
