@@ -34,15 +34,15 @@ This exposure creates a significant security risk, as Voyager provides full CRUD
 
 ## Impact
 
-1. Unauthorized access to the DevDojo Voyager administration panel[cite: 26].
-2. Exposure of sensitive application data, user accounts, emails, and database schemas[cite: 26].
-3. Ability to perform full CRUD operations (Browse, Read, Edit, Add, Delete) on database tables via BREAD[cite: 26].
-4. Risk of privilege escalation through user management or impersonation features[cite: 26].
+1. Unauthorized access to the DevDojo Voyager administration panel.
+2. Exposure of sensitive application data, user accounts, emails, and database schemas.
+3. Ability to perform full CRUD operations (Browse, Read, Edit, Add, Delete) on database tables via BREAD.
+4. Risk of privilege escalation through user management or impersonation features.
 5. Potential complete application compromise by altering database contents or injecting malicious administrative payloads.
 
 ## Remediation
 
-1. Immediately change the default administrator email and password to strong, unique credentials[cite: 26].
+1. Immediately change the default administrator email and password to strong, unique credentials.
 2. Restrict public internet access to the admin panel using network controls such as VPNs, IP allowlists, or firewalls.
 3. Ensure the framework and all packages are updated to the latest stable versions with security patches applied.
 4. Disable default admin accounts or seeders when deploying applications to production environments.
