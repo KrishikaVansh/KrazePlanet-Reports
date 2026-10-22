@@ -24,12 +24,10 @@ This exposure creates a critical operational risk, as uninterrupted power supply
 
 
 ## POC
+<img width="1519" height="103" alt="image" src="https://github.com/user-attachments/assets/2fc1b1f2-521b-49e7-b1f3-1d40736322da" />
+<img width="1378" height="690" alt="image" src="https://github.com/user-attachments/assets/06aae976-9273-40f6-9192-b78fd6cfebc4" />
+<img width="1348" height="521" alt="image" src="https://github.com/user-attachments/assets/b970cf38-2a52-4365-a55f-de0f2a5b5bd5" />
 
-![Nuclei Scanner Output showing default APC login detection](image_2f7209.png)
-
-![APC Network Management Card Login Interface](image_2f7224.png)
-
-![Authenticated APC Network Management Card Interface](image_2f7240.png)
 
 ## Impact
 
@@ -47,7 +45,4 @@ This exposure creates a critical operational risk, as uninterrupted power supply
 4. Update the APC Network Management Card firmware to the latest manufacturer release to ensure security patches are applied.
 5. Review system event logs and audit configuration settings to verify no unauthorized changes were made.
 
-<img width="1519" height="103" alt="image" src="https://github.com/user-attachments/assets/2fc1b1f2-521b-49e7-b1f3-1d40736322da" />
-http://210.70.26.133/Forms/login1
-<img width="1378" height="690" alt="image" src="https://github.com/user-attachments/assets/06aae976-9273-40f6-9192-b78fd6cfebc4" />
-<img width="1348" height="521" alt="image" src="https://github.com/user-attachments/assets/b970cf38-2a52-4365-a55f-de0f2a5b5bd5" />
+
