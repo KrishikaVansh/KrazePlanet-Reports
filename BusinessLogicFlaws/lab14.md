@@ -32,12 +32,11 @@ An attacker can intercept the HTTP POST request when adding an item to the cart 
 
 ## Impact
 
-1. Financial loss due to products being purchased significantly below their intended catalog value (e.g., purchasing items for $0.01).
+1. Financial loss due to products being purchased significantly below their intended catalog value .
 2. Bypass of pricing controls and e-commerce business logic.
 3. Potential exploitation at scale by malicious actors to acquire high-value inventory at negligible costs.
 
 ## Remediation
-
 1. Implement strict server-side validation for all pricing and product information by retrieving price values directly from a secure, trusted database table using the `product_id` rather than accepting prices from client requests.
 2. Remove price parameters from client-submitted data entirely during cart addition and checkout calculations.
 3. Ensure that total calculations, discounts, and taxes are computed server-side within a secure session context.
